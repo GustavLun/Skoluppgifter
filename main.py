@@ -44,5 +44,6 @@ Time_Hours = int (Driving_Time) # Sätter totala tiden i timmar en egen variabel
 Time_Minutes = int((Driving_Time -Time_Hours) * 60) # Variabel som tar bort hela timmar och räknar om decimalerna av kvarvarande timmar i minuter
 print(f"Det kommer ta dig  {Time_Hours} Timmar och {Time_Minutes} minuter till din destination")
 
+input ("Press enter to exit")
 #Task 5 2
 
