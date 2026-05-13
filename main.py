@@ -13,7 +13,7 @@ print (input("Press any key for next script"))
 #Task4 1A
 
 Heltal_1 = int(input(" Skriv ett heltal "))
-Heltal_2 = int(input(" Skriv ett till heltal"))
+Heltal_2 = int(input(" Skriv ett till heltal "))
 print(f"Summan av de två talen blir {Heltal_1 + Heltal_2}" )
 print (input("Press any key for next script"))
 
@@ -32,19 +32,19 @@ print (input("Press any key for next script"))
 
 # Task5 1A
 Distance_Between_Cities= 470
-Estimated_Speed = int(input("Hur många KM/H kör du?"))
+Estimated_Speed = int(input("Hur många KM/H kör du? "))
 print(f" Det kommer ta dig {round(Distance_Between_Cities / Estimated_Speed ,2)} Timmar att köra till destinationen")
-print (input("Press any key for next script"))
+print (input(" Press any key for next script "))
 
 #Task 5 1B
 Distance_Between_Cities= 470
-Estimated_Speed = int(input("Hur många KM/H kör du?"))
+Estimated_Speed = int(input("Hur många KM/H kör du? "))
 print(f" Det kommer ta dig {round((Distance_Between_Cities / Estimated_Speed) * 60 ,0)} minuter att köra att köra till destinationen")
-print (input("Press any key for next script"))
+print (input("Press any key for next script "))
 
 #Task 5 1C
 
-Estimated_Speed = int(input("Hur många KM/H kör du?"))
+Estimated_Speed = int(input("Hur många KM/H kör du? "))
 Driving_Time= 470 / Estimated_Speed
 Time_Hours = int (Driving_Time) # Sätter totala tiden i timmar en egen variabel
 Time_Minutes = (int((Driving_Time -Time_Hours) * 60)) # Variabel som tar bort hela timmar och räknar om decimalerna av kvarvarande timmar i minuter
@@ -54,15 +54,15 @@ print (input("Press any key for next script"))
 
 #Task 5 2
 import math
-X=(float(input("Skriv längden på sida X av triangeln")))
-B=float(input("Skriv längden på sida B av triangeln"))
+X=(float(input("Skriv i CM längden på sida X av triangeln ")))
+B=float(input("Skriv i CM längden på sida B av triangeln "))
 C=float (math.sqrt(X**2 + (B**2)))
-print("Hypotenusan är", (round(C ,2)))
+print("Hypotenusan är", (round(C ,2),"CM lång"))
 print (input("Press any key for next script"))
 
 #Task 5 3A
 from datetime import timedelta, datetime
-print(datetime.now().timestamp())
+print(datetime.now())
 print (input("Press any key for next script"))
 
 #Task 5 3B
