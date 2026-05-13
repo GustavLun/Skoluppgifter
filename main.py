@@ -1,6 +1,7 @@
 #Task 1
 print ("Hello, world")
 print (" This program was made by Gustav ")
+print (input("Press Enter to start program"))
 
 #Task3
 Ticket_Price = 100  # biljettpris
@@ -26,7 +27,7 @@ print (input("Press ENTER for next script"))
 
 #Task4 2B
 jacket_price = 2000
-rea_procent = int (input(" Skriv in önskad procentrabatt i heltal ")) #Finns inget som hindrar användaren från att skriva ett heltal
+rea_procent = int (input(" Skriv in önskad procentrabatt i heltal ")) #Finns inget som hindrar användaren från att skriva ett decimaltal
 print(f"Jackans kostnad efter avdragen rabatt är {round(jacket_price * (1- rea_procent / 100))} SEK") #round agerar som avrundning
 print (input("Press ENTER for next script"))
 
@@ -53,15 +54,15 @@ print (input("Press ENTER for next script"))
 
 
 #Task 5 2
-import math
+import math #import math för importering library för mattehantering
 X=(float(input("Skriv i CM längden på sida X av triangeln ")))
 B=float(input("Skriv i CM längden på sida B av triangeln "))
-C=float (math.sqrt(X**2 + (B**2)))
-print("Hypotenusan är" , round(C ,2) , "CM lång")
+C=float (math.sqrt(X**2 + (B**2))) #math.sqrt aggerar som roten ur. ** är samma sak som roten ur i pythonspråk
+print("Hypotenusan är" , round(C ,2) , "CM lång") #round är för att avrunda talet och 2 är för att specifiera till 2 decimaler
 print (input("Press ENTER for next script"))
 
 #Task 5 3A
-from datetime import timedelta, datetime
+from datetime import timedelta, datetime #Från datetime library hämta specifik moduler timedelta och datetime
 print(datetime.now())
 print (input("Press ENTER for next script"))
 
@@ -69,6 +70,6 @@ print (input("Press ENTER for next script"))
 Today=datetime.now()
 Days_Ahead=int(input(" Skriv antal dagar framåt för att få dess datum "))
 Futuredate = Today + timedelta(days=Days_Ahead)
-print("Om ",Days_Ahead , "Dagar är det den" , Futuredate.strftime(("%Y-%m-%d")))
+print("Om ",Days_Ahead , "Dagar är det den" , Futuredate.strftime(("%Y-%m-%d"))) #strftime agerar som formaterare
 
 print (input( "Press any key to exit "))
