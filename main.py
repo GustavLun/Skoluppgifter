@@ -62,7 +62,7 @@ print("Hypotenusan är" , round(C ,2) , "CM lång") #round är för att avrunda 
 print (input("Press ENTER for next script"))
 
 #Task 5 3A
-from datetime import timedelta, datetime #Från datetime library hämta specifik moduler timedelta och datetime
+from datetime import timedelta, datetime #Från datetime library hämtaa specifika moduler timedelta och datetime
 print(datetime.now())
 print (input("Press ENTER for next script"))
 
@@ -71,5 +71,7 @@ Today=datetime.now()
 Days_Ahead=int(input(" Skriv antal dagar framåt för att få dess datum "))
 Futuredate = Today + timedelta(days=Days_Ahead)
 print("Om ",Days_Ahead , "Dagar är det den" , Futuredate.strftime(("%Y-%m-%d"))) #strftime agerar som formaterare
+
+#Alla importer som "from" och "import" görs vid specifik uppgift men i bäst praxis skulle göras i toppen av koden/filen
 
 print (input( "Press any key to exit "))
